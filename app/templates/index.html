@@ -9,15 +9,15 @@
                 <li class="nav-item" >
                     <a id ="cats" class="nav-link" data-toggle="tab" href="#all"><strong>All Pitches</strong> </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" id ="cats" data-toggle="tab" href="#jobs">Job Pitches</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id ="cats" data-toggle="tab" href="#event">Event Pitches</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" id ="cats"data-toggle="tab" href="#ads">Advert Pitches</a>
-                </li>
+{#                <li class="nav-item">#}
+{#                  <a class="nav-link" id ="cats" data-toggle="tab" href="#jobs">Job Pitches</a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                  <a class="nav-link" id ="cats" data-toggle="tab" href="#event">Event Pitches</a>#}
+{#                </li>#}
+{#                <li class="nav-item">#}
+{#                  <a class="nav-link" id ="cats"data-toggle="tab" href="#ads">Advert Pitches</a>#}
+{#                </li>#}
             </ul>
             <div class="tab-content">
                 <div  class="container tab-pane active" id="all"><br>
@@ -26,13 +26,13 @@
                 <div  class="container tab-pane fade" id="event"><br>
                     {{ macro.display(event)}}
                 </div>
-                <div  class="container tab-pane fade" id="jobs"><br>
-                    {{ macro.display(job) }}
-                </div>
-                <div  class="container tab-pane fade" id="ads"><br>
-                    {{ macro.display(advertisement) }}
-
-                </div>
+{#                <div  class="container tab-pane fade" id="jobs"><br>#}
+{#                    {{ macro.display(job) }}#}
+{#                </div>#}
+{#                <div  class="container tab-pane fade" id="ads"><br>#}
+{#                    {{ macro.display(advertisement) }}#}
+{##}
+{#                </div>#}
             </div>
         </div>
 {% endblock%}

@@ -14,6 +14,21 @@ def index():
     advertisement = Pitch.query.filter_by(category='Advertisement').all()
     return render_template('index.html', job=job, event=event, pitches=pitches, advertisement=advertisement)
 
+@main.route('/jobs')
+def jobs():
+    job = Pitch.query.filter_by(category='Job').all()
+    return render_template('hello.html', job=job)
+
+@main.route('/events')
+def events():
+    event = Pitch.query.filter_by(category='Events').all()
+    return render_template('events.html', event=event)
+
+@main.route('/advertisement')
+def adverts():
+    advertisement = Pitch.query.filter_by(category='Advertisement').all()
+    return render_template('adverts.html', advertisement=advertisement)
+
 
 @main.route('/create_new', methods=['POST', 'GET'])
 @login_required
