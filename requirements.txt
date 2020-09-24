@@ -29,7 +29,7 @@ olefile==0.45.1
 Pillow==5.1.0
 psycopg2==2.8.6
 pycrypto==2.6.1
-pygobject==3.26.1
+
 pyparsing==2.2.0
 python-dateutil==2.6.1
 python-editor==1.0.4
